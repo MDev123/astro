@@ -1,0 +1,5 @@
+local LPlayer = game:GetService("Players").LocalPlayer
+
+game:GetService("GuiService").MenuOpened:Connect(function()
+ game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,game.JobId,LPlayer)
+end)
